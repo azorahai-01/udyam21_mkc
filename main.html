@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- backtotop??????????????????????????????????????????? -->
+
+<link rel="stylesheet" href="main.css">
+
+    <!-- speaker????????? -->
+    <link rel="stylesheet" href="speaker.css">
+    <!-- schedule -->
+    <link rel="stylesheet" href="main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- events -->
+
+
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+    @import  url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+    body {
+        /* background: url(https://robertsspaceindustries.com/rsi/static/images/gridbg_glow.png),
+        url(https://robertsspaceindustries.com/rsi/static/images/common/bg-stars-2560.jpg)
+        repeat; */
+        background-image: url("walle.jpg");
+        /* background-color: rgb(182, 40, 40); */
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+        color: rgba(255,255,255,0.9);
+        font-family: "Nunito Sans", sans-serif;
+        overflow-x:hidden
+    }
+    .row1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .compis-desc {
+        margin-bottom: 15px;
+        /* height: 250px; */
+    }
+    .row {
+        margin-bottom: 15px;
+        height: 255px;
+    }
+    .compis-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+    .compis-desc:hover{
+        transform: scale(1.03);
+        transition: transform .5s ease;
+    }
+    .compis-content {
+        color: white;
+        height: 100%;
+        background-color: rgba(75, 52, 88, 0.3);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 0.5rem;
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+    }
+
+    .compis-content > p {
+        margin-bottom: 0.2rem;
+    }
+    .compis-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .compis-pm > span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .compis-btn {
+        width: 9rem;
+    }
+    .tab-pane{
+        font-size: 1.2rem;
+    }
+
+    #prize-money, #num-compi, #num-parti {
+        font-weight: 600;
+    }
+    #prize-money:after {
+        content: ' +';
+    }
+    #num-parti:after {
+        content: ' +';
+    }
+    #num-compi:after {
+        content: ' +';
+    }
+    .compis-about{
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 900px) {
+    .row1{
+        display: block;
+    }
+    .row{
+        width: 700px;
+        margin-bottom: 100px;
+    }
+    .compis-desc{
+        margin-bottom: 50px;
+        width: 700px;
+    }
+
+}
+
+.contactnow{
+/* position: absolute;
+bottom: 0px; */
+}
+</style>
+
+<!-- contactus????????????????????????? -->
+<link rel="stylesheet" type="text/css" href="style (1).css">
+<!-- <title>CONTACT US</title> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <a id="button"></a>
+    <div class="heading">Events</div>
+    <div class="row1">
+
+
+
+
+
+
+
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="mosaic.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">MOSAIC</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,00,000</span></p>
+                        <p class="compis-about mb-3">Mosaic is a machine learning and computer vision based event that emphasizes on exposing the learners to the buzzing and state-of-the-art field of artificial intelligence.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>                        
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="spybits.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">SPYBITS</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">SpyBits is a cryptography and cryptanalysis based event where participants will learn the art and science behind keeping the information secure from unintended audiences and even how to break into secrets of others by decoding the encoded data.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+                        <a class="btn btn-outline-success" href="">Register</a>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="ichip.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">I-CHIP</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">I-Chip is a Verilog HDL based event. The participants are given an exciting problem statement and are expected to code its solution in Verilog, simulate their code and implement it on FPGA board.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="comm.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">COMMNET</p>
+                        <p class="compis-pm">Prize Money: <span>INR 1,75,000</span></p>
+                        <p class="compis-about mb-3">Commnet is a digital communication based event where we explore various components and processes used in digital communication systems such as modulation and coding theory and implement them to solve various challenges using MATLAB.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="continum.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">CONTINUUM</p>
+                        <p class="compis-pm">Prize Money: <span>INR 40,000</span></p>
+                        <p class="compis-about mb-3">Continuum is an analog electronics based technical event. The participants get exposure to the simulation of different circuits with desired specifications using a simulation software (usually ORCAD) and hardware implementation of the same.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="digisim.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">DIGISIM</p>
+                        <p class="compis-pm">Prize Worth: <span>INR 60,000</span></p>
+                        <p class="compis-about mb-3">Digisim is a digital electronics based event where the participants get to design optimised digital circuits and their proteus simulations.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="xiota.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">X-IOT-A</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">Sorry for the inconvenience, X-IOT-A event has been scraped.
+                            X-IoT-A is an event based on internet of things. In this event we will solve various real world problems through IOT. Competitors thinks about various ideas and implement it.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="cassandra.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">CASSANDRA</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">Our greek goddess Cassandra who was cursed by Apollo that she colud see the future and predict prophecies.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="col-md-6 col-12 compis-desc">
+            <div class="row">
+                <div class="col-md-5 col-6 pr-0"><img class="compis-logo" src="funkit.jpg" alt=""></div>
+                <div class="col-md-7 col-6 pl-0">
+                    <div class="compis-content">
+                        <p class="compis-name">FUNKIT</p>
+                        <p class="compis-pm">Prize Money: <span>INR 50,000</span></p>
+                        <p class="compis-about mb-3">FUNCKIT about solving a computational problem by hardware implementation of digital circuits. We manipulate logic gates and digital ICs to optimize hardware and execution time.</p>
+                        <a class="btn btn-outline-primary" href="">Explore More</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <a class="btn btn-outline-success" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- speaker -->
+<div class="heading">Speakers</div>
+<div class="speakers col-24">
+    <div class="wrap col-md-3 col-12">
+  
+        <div class="card">
+          <div class="card-liner">
+          <figure><img src="https://previews.123rf.com/images/baranq/baranq1603/baranq160300875/53959238-man-working-at-the-office-on-laptop.jpg" alt="" />       </figure>
+          <div class="card--social">
+            <ul>
+              <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+              <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="card--title">
+            <h3>Colin McGraw</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="card--desc">
+            <hr />
+            <p>Coffee, code, repeat... he doesn't eat food, and only stops to defend the table tennis crown.</p>
+          </div>
+            <div class="card--btn">
+              <a href="#0">
+                <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                <span class="fullprof">View Full Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    <div class="wrap col-md-3 col-12">
+  
+        <div class="card">
+          <div class="card-liner">
+          <figure><img src="https://previews.123rf.com/images/baranq/baranq1603/baranq160300875/53959238-man-working-at-the-office-on-laptop.jpg" alt="" />       </figure>
+          <div class="card--social">
+            <ul>
+              <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+              <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="card--title">
+            <h3>Colin McGraw</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="card--desc">
+            <hr />
+            <p>Coffee, code, repeat... he doesn't eat food, and only stops to defend the table tennis crown.</p>
+          </div>
+            <div class="card--btn">
+              <a href="#0">
+                <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                <span class="fullprof">View Full Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    <div class="wrap col-md-3 col-12">
+  
+        <div class="card">
+          <div class="card-liner">
+          <figure><img src="https://previews.123rf.com/images/baranq/baranq1603/baranq160300875/53959238-man-working-at-the-office-on-laptop.jpg" alt="" />       </figure>
+          <div class="card--social">
+            <ul>
+              <li class="twitter"><a href="#0"><i class="fa fa-twitter"></i></a></li>
+              <li class="linkedin"><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="card--title">
+            <h3>Colin McGraw</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="card--desc">
+            <hr />
+            <p>Coffee, code, repeat... he doesn't eat food, and only stops to defend the table tennis crown.</p>
+          </div>
+            <div class="card--btn">
+              <a href="#0">
+                <span class="moreinfo"><i class="fa fa-info-circle"></i> More Info</span>
+                <span class="fullprof">View Full Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+</div>
+
+
+      
+      
+    <!-- schedule -->
+    <div class="heading">Schedule</div>
+    <div class="containertp">
+        <div class="rowtp">
+            <div class="col-md-12">
+                <div class="main-timeline3">
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                    
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                    
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <span class="year">Coming Soon</span>
+                        
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contactus????????????????????????? -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="main.js"></script>
+
+    <div class="container my-container id-section justify-content-around">
+        <div class="row my-row id-row">
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="../images/dummy-img-2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                    <h5 class="card-title text-center" style="color: wheat;">Florence Garza</h5>
+                    <p class="card-text text-center">POST</p>
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="../images/dummy-img-2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                    <h5 class="card-title text-center" style="color: wheat;">Florence Garza</h5>
+                    <p class="card-text text-center">POST</p>
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3  my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="../images/dummy-img-2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                    <h5 class="card-title text-center" style="color: wheat;">Florence Garza</h5>
+                    <p class="card-text text-center">POST</p>
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="mt-3 col-6 col-md-3 my-col id2">
+                <div class="card profile-card-5">
+                    <div class="card-img-block">
+                        <img class="card-img-top" src="../images/dummy-img-2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-0">
+                    <h5 class="card-title text-center" style="color: wheat;">Florence Garza</h5>
+                    <p class="card-text text-center">POST</p>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="reach">REACH US </h2>
+    <div class="container my-container contact-us-section">
+        <div class="row my-row contact-us-row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="imgs">
+                    <div class="card-img-block col-6">
+                        <img class="card-img-top" src="../images/UDYAM_21-4.png" alt="Card image cap">
+                    </div>
+                    <!-- <div class="card-img-block col-6">
+                        <img class="card-img-top" src="../images/UDYAM_21.png" alt="Card image cap">
+                    </div> -->
+                </div>
+                <div class="contactInfo col-md-6">
+                    <div class="box">
+                        <div class="icon"><i class="fa1 fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>EMAIL</h3>
+                            <p>abc@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactInfo col-md-6">
+                    <div class="box">
+                        <div class="icon"><i class="fa1 fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>ADDRESS</h3>
+                            <p>3/2, Sanvid Nagar, Kanadia Road, CITY, STATE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactInfo col-md-6">
+                    <div class="box">
+                        <div class="icon"><a href="tel:99999999999"><i class="fa1 fa fa-envelope-o" aria-hidden="true"></i></a></div>
+                        <div class="text">
+                            <h3>PHONE</h3>
+                            <p>999999999999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <!-- <div class="col-6 col-md-3 my-col contact1">
+                contact1
+                <div class="card-img-block EES">
+                    <img class="card-img-top" src="assets/images/UDYAM'21-4.png" alt="Card image cap">
+                </div>
+                <h2 class="email">EMAIL</h2>
+            </div>
+            <div class="col-6 col-md-3 my-col contact2">
+                contact2
+                <div class="card-img-block EES">
+                    <img class="card-img-top" src="http://www.udyamfest.com/static/udyam/images/EES8.jpeg" alt="Card image cap">
+                </div>
+                <h2 class="address">ADDRESS</h2>
+            </div> -->
+            <div class="col-12 col-sm-12 col-md-6 my-col form">
+                <div class="login-box">
+                    <h2 class="contact">CONTACT US</h2>
+                    <form>
+                        <div class="user-box">
+                            <input type="text" name="" required="">
+                            <label>Name</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" required="">
+                            <label for="exampleInputEmail1">Email address</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" required="">
+                            <label for="exampleInputcontactno.">Contact-No.</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" required="" >
+                            <label for="exampleInputcontactno.">Query</label>
+                        </div>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer class="nb-footer">
+            <!-- <div class="container">
+            <div class="row">
+            <div class="col-sm-12"> -->
+            <div class="about">
+                <img src="../images/logo.png" class="img-responsive center-block" alt="">
+            
+                <div class="social-media">
+                    <ul class="list-inline">
+                        <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 cus-info">
+                    <div class="footer-info-single">
+                        <h2 class="title">Customer information</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                            <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                            <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+                            <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                            <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+                        </ul>
+                    </div>
+                </div>  
+        </footer>
+    </div>
+
+</body>
+</html>
